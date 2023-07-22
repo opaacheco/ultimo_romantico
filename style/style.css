@@ -27,13 +27,24 @@
     border-radius: 5px;
     background: pink;
     display: inline-block;
-    text-align: center;
-    align-items: center;
 }
 
-.cards > h1 {
+.nossa_img {
     background: none;
-    color: red;
-    font-family: 'Open Sans', sans-serif;
+    padding-top: 50%;
+    max-width: 50;
+    min-width: 50;
+    max-height: 100px;
+    min-height: 100px;
 }
 
+.cards_back {
+    background: none;
+    background-image: url('gira_le.png');
+    border: 3px solid rgb(255, 0, 0);
+    height: 300px;
+    width: 200px;
+    margin: 3px;
+    border-radius: 5px;
+    display: inline-block;
+}

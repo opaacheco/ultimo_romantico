@@ -9,6 +9,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script>
+  function mudar() {
+    var divElement = document.getElementById('teste');
+    var imgElement = divElement.querySelector('.nossa_img');
+
+    // Check if the current image source is the old one and change it to the new one
+    if (imgElement.src.endsWith('img/girassol_le.png')) {
+      imgElement.src = 'img/gira_le.png'; // Replace 'img/new_image.png' with the path of your new image
+    } else {
+      imgElement.src = 'img/girassol_le.png'; // Replace 'img/girassol_le.png' with the path of your old image
+    }
+  }
+    </script>
 </head>
 <body>
     <div>
@@ -18,33 +31,34 @@
         <!--pimeira linha de cartas-->
         <div class="cards_block">
             <div class="cards">
-                <h1>CARD</h1>
+                <img src="img/girassol_le.png" class="nossa_img">
             </div>
             <div class="cards">
-                <h1>CARD</h1>
+                <img src="img/girassol_le.png" class="nossa_img">
             </div>
             <div class="cards">
-                <h1>CARD</h1>
+                <img src="img/girassol_le.png" class="nossa_img">
             </div>
             <div class="cards">
-                <h1>CARD</h1>
+                <img src="img/girassol_le.png" class="nossa_img">
             </div>
         </div>
         <!--segunda linha de cartas-->
         <div class="cards_block">
-            <div class="cards">
-                <h1>CARD</h1>
+            <div id="teste" class="cards" onclick="mudar()">
+                <img src="img/girassol_le.png" class="nossa_img">
             </div>
             <div class="cards">
-                <h1>CARD</h1>
+                <img src="img/girassol_le.png" class="nossa_img">
             </div>
             <div class="cards">
-                <h1>CARD</h1>
+                <img src="img/girassol_le.png" class="nossa_img">
             </div>
             <div class="cards">
-                <h1>CARD</h1>
+                <img src="img/girassol_le.png" class="nossa_img">
             </div>
         </div>
     </div>
 </body>
+
 </html>
