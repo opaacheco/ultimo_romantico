@@ -1,0 +1,39 @@
+* {
+    background: black;
+    margin: 0;
+    padding: 0;
+}
+
+.title_nosso {
+    color: rgb(211, 38, 38);
+    padding: 1.7%;
+    text-align: center;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.cards_block {
+    display: block;
+    text-align: center;
+}
+
+.cards {
+    border: 3px solid rgb(255, 0, 0);
+    height: 300px;
+    width: 200px;
+    margin: 3px;
+    border-radius: 5px;
+    background: pink;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+}
+
+.cards > h1 {
+    background: none;
+    color: red;
+    font-family: 'Open Sans', sans-serif;
+}
+
