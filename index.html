@@ -9,50 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <script>
-
-        var pontos = 0; // armazena a quantidade de pontos obtido pelo jogador
-        var guardarElemento = null // guarda o primeiro elemento para posteriormente ser utilizado 
-        var descricaoImagemUm = null; // alt da imagem para ser comparado no fim
-        var lockVirar = false; 
-        function verificarIgualdade(element) {
-            if(lockVirar)return;
-            if (element.getAttribute("data-matched") === "true") {
-                return; // Return early if the card is already matched
-            }
-            if (descricaoImagemUm === null) {
-                descricaoImagemUm = element.alt; // Armazena o valor do atributo 'alt' da imagem clicada
-                guardarElemento = element
-                virarCard(element);
-            } else {
-                const descricaoImagemDois = element.alt; // Armazena o valor do atributo 'alt' da segunda imagem clicada
-                virarCard(element);
-                if (descricaoImagemUm === descricaoImagemDois) {
-                    pontos = pontos + 1;
-                    element.setAttribute("data-matched", "true");
-                    guardarElemento.setAttribute("data-matched", "true");
-                    console.log("Par de imagens igual encontrado!");
-                } else {
-                    console.log("Par de imagens diferente.");
-                    lockVirar = true;
-                    setTimeout(function(){
-                        virarCard(guardarElemento)
-                        virarCard(element)
-                        lockVirar = false;
-                    }, 1000);
-                }
-                descricaoImagemUm = null; // Reseta a variável para que a próxima rodada comece novamente
-            }
-        }
-    
-        function virarCard(element) {
-            if(element.style.opacity == "1"){
-                element.style.opacity = "0"
-            }else{
-                element.style.opacity = "1"
-            }
-        }
-
+    <script src="script/backend.js">
     </script>
     
 </head>
@@ -83,19 +40,19 @@
         <!--segunda linha de cartas-->
         <div class="cards_block">
             <div class="cards">
-                <img src="img/mordida.jpeg" class="carta_virada" onclick="verificarIgualdade(this)" alt="sorriso">
+                <img src="img/mordida.jpeg" class="carta_virada" onclick="verificarIgualdade(this)" alt="mordida">
                 <img src="img/girassol_le.png" class="carta_escondida" onclick="virarCard(this)">
             </div>
             <div class="cards">
-                <img src="img/carinho.jpeg" class="carta_virada" onclick="verificarIgualdade(this)" alt="nos_banheiro">
+                <img src="img/carinho.jpeg" class="carta_virada" onclick="verificarIgualdade(this)" alt="carinho">
                 <img src="img/girassol_le.png" class="carta_escondida" onclick="virarCard(this)">
             </div>
             <div class="cards">
-                <img src="img/mordida.jpeg" class="carta_virada" onclick="verificarIgualdade(this)" alt="sorriso">
+                <img src="img/mordida.jpeg" class="carta_virada" onclick="verificarIgualdade(this)" alt="mordida">
                 <img src="img/girassol_le.png" class="carta_escondida" onclick="virarCard(this)">
             </div>
             <div class="cards">
-                <img src="img/carinho.jpeg" class="carta_virada" onclick="verificarIgualdade(this)" alt="nos_banheiro">
+                <img src="img/carinho.jpeg" class="carta_virada" onclick="verificarIgualdade(this)" alt="carinho">
                 <img src="img/girassol_le.png" class="carta_escondida" onclick="virarCard(this)">
             </div>
         </div>

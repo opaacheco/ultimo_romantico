@@ -1,11 +1,11 @@
 * {
-    background: black;
+    background: #FFFFFF;
     margin: 0;
     padding: 0;
 }
 
 .title_nosso {
-    color: rgb(211, 38, 38);
+    color: #FFF176;
     padding: 1.7%;
     text-align: center;
     display: block;
@@ -20,12 +20,12 @@
 }
 
 .cards {
-    border: 3px solid rgb(255, 0, 0);
+    border: 3px solid #FFF176;
     height: 300px;
     width: 200px;
     margin: 3px;
     border-radius: 5px;
-    background: pink;
+    background:  #D2B48C;
     display: inline-block;
 }
 
