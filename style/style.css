@@ -1,27 +1,125 @@
-* {
-    background: #FFFFFF;
+body {
+    background: #FFFFFF; 
+    background-repeat: repeat;
     margin: 0;
     padding: 0;
+    background-image: url('../img/back.png');
 }
 
-.title_nosso {
-    color: #FFF176;
-    padding: 1.7%;
-    text-align: center;
+#conteudo-completo {
     display: block;
-    font-family: 'Open Sans', sans-serif;
+}
+
+/* configs para os pop-up's */
+
+#pop-up-derrota {
+    margin-top: 200px;
+}
+
+#pop-up-vitoria {
+    margin-top: 30px;
+}
+
+.pop-up {
+    display: none;
+    width: 500px;
+    height: auto;
+    border: 4px solid #FFF176;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    background: #FFFFFF;
+}
+
+.pop-up > img {
+    width: 75px;
+    height: 85px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    padding-bottom: 5%;
+}
+
+.pop-up > h2, p {
+    padding-bottom: 2%;
+    font-family: 'Lilita One', cursive;
+    background: #FFFFFF;
+}
+
+.pop-up > h2 {
     text-transform: uppercase;
-    font-weight: bold;
+    padding-top: 2%;
+    color: #FFF176;
+}
+
+.pop-up > p {
+    color: #D2B48C;
+}
+
+.fechar {
+    float: right;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* fim configs para os pop-up's */
+
+.title_nosso {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 600px;
+    padding: 1.0%;
+    margin-left: 25%;
+    padding-bottom: 0;
+}
+
+.imagem_title_duque { 
+    width: 90px;
+    height: 90px;
+}
+
+.imagem_title_mel { 
+    width: 100px;
+    height: 100px;
+}
+
+#vida {
+    font-family: 'Lilita One', cursive;
+    margin-right: 3%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#vida > img {
+    width: 20px;
+    height: 20px;
+}
+
+.conteudo_title {
+    display: inline-flex;
+    color: #FFF176;
+    font-family: 'Lilita One', cursive;
+    text-transform: uppercase;
+    font-weight: 500 !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 10%;
 }
 
 .cards_block {
     display: block;
     text-align: center;
+    text-align: center;
 }
 
 .cards {
     border: 3px solid #FFF176;
-    height: 300px;
+    height: 275px;
     width: 200px;
     margin: 3px;
     border-radius: 5px;
@@ -31,7 +129,7 @@
 
 .carta_escondida {
     background: none;
-    padding-top: 50%;
+    padding-top: 45%;
     max-width: 50;
     min-width: 50;
     max-height: 100px;
@@ -44,8 +142,12 @@
     margin-left: -48px;
     position: absolute;
     background: none;
-    height: 300px;
+    height: 275px;
     width: 200px;
     border-radius: 3px;
     opacity: 0;
+}
+
+.poesia {
+    text-align: start;
 }

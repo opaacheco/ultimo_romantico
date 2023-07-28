@@ -9,53 +9,117 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <script src="script/backend.js">
-    </script>
-    
+    <script src="script/backend.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lilita+One&family=Open+Sans:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <div class="title_nosso">
-            <h1>Nossas Memórias</h1>
+    <div id="conteudo-completo">
+        <div class="title_nosso">        
+            <h3 id="vida"> <img src="img/icon_site_le_pe.png">x<span id="vidaCounter">4</span></h3>
+            <div class="conteudo_title"> 
+                <img src="img/duque.png" title="duquezão do pai" class="imagem_title_duque">
+                <h1>Nossas Memórias</h1>
+                <img src="img/mel.png" title="mel linda" class="imagem_title_mel">
+            </div>
         </div>
-        <!--pimeira linha de cartas-->
+        <!-- pop-up -->
+        <!-- pimeira linha de cartas -->
         <div class="cards_block">
             <div class="cards">
-                <img src="img/sorriso.jpeg" class="carta_virada" onclick="verificarIgualdade(this)" alt="sorriso">
+                <img src="img/sorriso.jpeg" class="carta_virada" title="te amooooo" onclick="verificarIgualdade(this)" alt="sorriso">
                 <img src="img/girassol_le.png" class="carta_escondida" onclick="virarCard(this)">
             </div>
             <div class="cards">
-                <img src="img/nos_banheiro.jpeg" class="carta_virada" onclick="verificarIgualdade(this)" alt="nos_banheiro">
+                <img src="img/nos_banheiro.jpeg" class="carta_virada" title="amor da minha vida" onclick="verificarIgualdade(this)" alt="nos_banheiro">
                 <img src="img/girassol_le.png" class="carta_escondida" onclick="virarCard(this)">
             </div>
             <div class="cards">
-                <img src="img/sorriso.jpeg" class="carta_virada" onclick="verificarIgualdade(this)" alt="sorriso">
+                <img src="img/carinho.jpeg" class="carta_virada" title="essa novinha tem um rabão slk" onclick="verificarIgualdade(this)" alt="carinho">
                 <img src="img/girassol_le.png" class="carta_escondida" onclick="virarCard(this)">
             </div>
             <div class="cards">
-                <img src="img/nos_banheiro.jpeg" class="carta_virada" onclick="verificarIgualdade(this)" alt="nos_banheiro">
+                <img src="img/carinho.jpeg" class="carta_virada" title="essa novinha tem um rabão slk" onclick="verificarIgualdade(this)" alt="carinho">
                 <img src="img/girassol_le.png" class="carta_escondida" onclick="virarCard(this)">
             </div>
         </div>
         <!--segunda linha de cartas-->
         <div class="cards_block">
             <div class="cards">
-                <img src="img/mordida.jpeg" class="carta_virada" onclick="verificarIgualdade(this)" alt="mordida">
+                <img src="img/mordida.jpeg" class="carta_virada" title="pelo menos não mordeu a rola" onclick="verificarIgualdade(this)" alt="mordida">
                 <img src="img/girassol_le.png" class="carta_escondida" onclick="virarCard(this)">
             </div>
             <div class="cards">
-                <img src="img/carinho.jpeg" class="carta_virada" onclick="verificarIgualdade(this)" alt="carinho">
+                <img src="img/sorriso.jpeg" class="carta_virada" title="te amooooo" onclick="verificarIgualdade(this)" alt="sorriso">
                 <img src="img/girassol_le.png" class="carta_escondida" onclick="virarCard(this)">
             </div>
             <div class="cards">
-                <img src="img/mordida.jpeg" class="carta_virada" onclick="verificarIgualdade(this)" alt="mordida">
+                <img src="img/mordida.jpeg" class="carta_virada" title="pelo menos não mordeu a rola" onclick="verificarIgualdade(this)" alt="mordida">
                 <img src="img/girassol_le.png" class="carta_escondida" onclick="virarCard(this)">
             </div>
             <div class="cards">
-                <img src="img/carinho.jpeg" class="carta_virada" onclick="verificarIgualdade(this)" alt="carinho">
+                <img src="img/nos_banheiro.jpeg" class="carta_virada" title="amor da minha vida" onclick="verificarIgualdade(this)" alt="nos_banheiro">
                 <img src="img/girassol_le.png" class="carta_escondida" onclick="virarCard(this)">
             </div>
         </div>
+    </div>
+    <!-- pop-up derrota-->
+    <div id="pop-up-derrota" class="pop-up">
+        <span class="fechar" onclick="fecharPopUp()">&times;</span>
+        <h2>tu perdeu Letícia !!</h2>
+        <p>poxa vida, não me ama o suficiente pra ganhar o nosso joguinho? &#128546;</p>
+        <img src="img/amo.jpeg" title="continuo te amando com esse erro fatal AAAAAAAAAA">
+    </div>
+    <!-- pop-up vitoria-->
+    <div id="pop-up-vitoria" class="pop-up">
+        <span class="fechar" onclick="fecharPopUp()">&times;</span>
+        <h2>ACERTO TUDO VIDA !!</h2>
+        <p class="text-parabens">PARABÉNS! Agora, além de ter meu coração, minha alma, meu oxigênio, meu pensamento, minha luz,
+            minha atenção, minha carência, meus ciúmes, meu amor, carinho, saudades e tudo o que eu tenho,
+            sua luz brilha mais que a lua, sua voz ecoa em meus ouvidos e em minha mente.
+            Você me encantou mais que o canto de uma sereia com os piratas, além disso tudo ganho o NOSSO JOGO.
+        </p>
+        <p class="poesia">
+            <br>
+            A vida é para quem sabe viver,
+            <br>
+            é uma arte, e saber viver
+            <br>
+            é saber escolher.
+            <br>
+            E escolher para mim foi muito fácil,
+            <br>
+            alguém que me faz me sentir amável.
+            <br>
+            Somos inseparáveis,
+            <br>
+            a felicidade de estar contigo é inexplicável.
+            <br>
+            "De que vale a vida sem você ao meu lado?"
+            <br>
+            Essa frase está tatuada em minha alma,
+            <br>
+            assim como o meu amor por ti.
+            <br>
+            Você é mais linda que a praia mais bonita,
+            <br>
+            mais gostosa que a melhor comida,
+            <br>
+            mais perfeita que todas as maravilhas da terra,
+            <br>
+            mais especial do que esperar pelo Papai Noel,
+            <br>
+            mais saborosa que uma tainha
+            <br>
+            (essa é dolorida de falar kkkk, que as tainhas não escutem).
+            <br>
+            O tempo contigo é mais precioso do que o verão.
+            <br>
+            Se fosse para escolher uma pessoa para passar todos os dias até o fim da vida,
+            <br>
+            não teria dúvida, você estaria comigo para sempre ❤️.
+        </p>
     </div>
 </body>
 
